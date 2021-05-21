@@ -1,0 +1,25 @@
+package good;
+
+import java.io.FileInputStream;
+
+import java.io.FileNotFoundException;
+
+import java.io.FileOutputStream;
+
+import java.io.IOException;
+
+public class github  {
+
+public static void main(String[] args) throws IOException {
+
+FileInputStream fs = new FileInputStream("D:\\mydata.txt");
+
+byte[] buf = new byte[1024*20];
+
+int k = fs.read(buf, 0, buf.length);
+
+System.out.println(new String(buf));
+
+}
+
+}
